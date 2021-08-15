@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>baking</title>
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h2 class="text-center font-bold text-4xl my-9">let's go you <span class="text-yellow-500">sooooomony !</span>
+        </h2>
+    </header>
+
+    <main>
+        <!-- current Balance  -->
+        <section class="grid grid-cols-3 gap-4 w-3/4 mx-auto pt-8 mx-8">
+            <div class="bg-blue-400 pl-8 pt-16 text-white font-bold text-2xl ">
+                <h2>Deposit</h2>
+                <h2>$<span id="deposit-total">00</span> </h2>
+            </div>
+            <div class="bg-green-300 pl-8 py-16 text-white font-bold text-2xl ">
+                <h2>withdow</h2>
+                <h2>$ <span id="withdow-total">00</span></h2>
+            </div>
+            <div class="bg-yellow-400 pl-8 py-16 text-white font-bold text-2xl ">
+                <h2>Balance</h2>
+                <h2> $ <span id="balance-total">1200</span></h2>
+            </div>
+
+        </section>
+
+        <!-- withdow your balacne  -->
+
+        <section class="w-3/4 mx-auto pb-16 pt-8">
+            <!-- Deposit section  -->
+
+            <div class="grid grid-cols-2 gap-4">
+                <div class=" bg-red-100">
+                    <div class="py-16 w-9/12">
+                        <h2 class="text-blue-400 font-bold text-xl mx-4 mb-3">Please type your Deposit</h2>
+                        <input id="deposit-amount" class="block w-full mb-3 pl-2 mx-4" type="text" name="" id=""
+                            placeholder=" $ amount your to Deposit">
+                        <button id="deposit-submit"
+                            class="bg-blue-500 text-white font-bold px-8 py-2 text-base mb-8 px-4 mx-4">Deposit</button>
+                    </div>
+                </div>
+                <!-- withdow section  -->
+                <div class="bg-purple-400">
+                    <div class="py-16 w-9/12">
+                        <h2 class="text-white font-bold text-xl mx-4 mb-3">Please type your withdow</h2>
+                        <input id="withdow-amount" class="block w-full mb-3 pl-2 mx-4" type="text" name="" id=""
+                            placeholder=" $ amount your to withdow">
+                        <button id="withdow-submit"
+                            class="bg-blue-500 text-white font-bold px-8 py-2 text-base mb-8 px-4 mx-4">withdow</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/banking.js"></script>
+</body>
+
+</html>
